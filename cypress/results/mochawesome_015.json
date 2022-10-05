@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-06-25T18:42:22.977Z",
+    "end": "2022-06-25T18:42:36.528Z",
+    "duration": 13551,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0221a727-9328-454e-a20b-e41d5c23836c",
+      "title": "",
+      "fullFile": "cypress\\integration\\examples\\BDD\\ecommerce.feature",
+      "file": "cypress\\integration\\examples\\BDD\\ecommerce.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a4da7ff7-c01b-4635-a97e-f882684bd263",
+          "title": "End to End E-commerce validation",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Ecommerce Product Delivery",
+              "fullTitle": "End to End E-commerce validation Ecommerce Product Delivery",
+              "timedOut": null,
+              "duration": 9680,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "bf3e3516-92af-412a-b005-199448e99ea0",
+              "parentUUID": "a4da7ff7-c01b-4635-a97e-f882684bd263",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Filling the form to go to shop",
+              "fullTitle": "End to End E-commerce validation Filling the form to go to shop",
+              "timedOut": null,
+              "duration": 1261,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "1a48bce8-9523-47e8-afd8-a4e324d91d2e",
+              "parentUUID": "a4da7ff7-c01b-4635-a97e-f882684bd263",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "bf3e3516-92af-412a-b005-199448e99ea0",
+            "1a48bce8-9523-47e8-afd8-a4e324d91d2e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10941,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

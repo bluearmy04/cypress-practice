@@ -1,0 +1,129 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-06-25T18:40:51.298Z",
+    "end": "2022-06-25T18:41:23.357Z",
+    "duration": 32059,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6d6a9ed0-663d-40f5-ba2d-5663c9d3e462",
+      "title": "",
+      "fullFile": "cypress\\integration\\examples\\BDD\\ecommerce.feature",
+      "file": "cypress\\integration\\examples\\BDD\\ecommerce.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1945a60d-3117-4e62-85ce-a71f3cad3e59",
+          "title": "End to End E-commerce validation",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Ecommerce Product Delivery",
+              "fullTitle": "End to End E-commerce validation Ecommerce Product Delivery",
+              "timedOut": null,
+              "duration": 10022,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "1e734312-97c0-4a49-998f-c8480519905d",
+              "parentUUID": "1945a60d-3117-4e62-85ce-a71f3cad3e59",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Filling the form to go to shop",
+              "fullTitle": "End to End E-commerce validation Filling the form to go to shop",
+              "timedOut": null,
+              "duration": 9727,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 8000ms: expected '<input.ng-untouched.ng-pristine.ng-valid>' to have value 'Riyad', but the value was 'minhaj'",
+                "estack": "AssertionError: Timed out retrying after 8000ms: expected '<input.ng-untouched.ng-pristine.ng-valid>' to have value 'Riyad', but the value was 'minhaj'\n    at Context.eval (https://rahulshettyacademy.com/__cypress/tests?p=cypress\\integration\\examples\\BDD\\ecommerce.feature:108:33)\n    at Context.resolveAndRunStepDefinition (https://rahulshettyacademy.com/__cypress/tests?p=cypress\\integration\\examples\\BDD\\ecommerce.feature:12574:29)\n    at Context.eval (https://rahulshettyacademy.com/__cypress/tests?p=cypress\\integration\\examples\\BDD\\ecommerce.feature:11895:35)",
+                "diff": "- 'minhaj'\n+ 'Riyad'\n"
+              },
+              "uuid": "e2d2c991-4a2f-4a59-9a97-bbe99d7b3b9a",
+              "parentUUID": "1945a60d-3117-4e62-85ce-a71f3cad3e59",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1e734312-97c0-4a49-998f-c8480519905d"
+          ],
+          "failures": [
+            "e2d2c991-4a2f-4a59-9a97-bbe99d7b3b9a"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 19749,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

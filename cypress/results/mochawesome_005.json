@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-06-22T12:15:33.410Z",
+    "end": "2022-06-22T12:16:03.042Z",
+    "duration": 29632,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "08a6a7c1-ea3c-4beb-a8b3-47adb97c6ba8",
+      "title": "",
+      "fullFile": "cypress/integration/my_examples_2.js",
+      "file": "cypress/integration/my_examples_2.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9a691082-7992-4e4b-8068-6343954c5f75",
+          "title": "Test Suit 1",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Proceed to checkout",
+              "fullTitle": "Test Suit 1 Proceed to checkout",
+              "timedOut": null,
+              "duration": 12101,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "//driver.get\ncy.visit(\"https://rahulshettyacademy.com/\"); //driver.findelements\ncy.get('.search-keyword').type('ca'); //thread.sleep\ncy.wait(2000); //aliasing as variable\ncy.get('.products').as('productLocator');\ncy.get('@productLocator').find('.product').each(($el, index, $list) => {\n  const textVeg = $el.find('h4.product-name').text();\n  if (textVeg.includes('Cashews')) {\n    //$el.contains('ADD TO CART').click();\n    cy.wrap($el).find('button').click();\n  }\n});\ncy.get('.cart-icon > img').click();\ncy.contains('PROCEED TO CHECKOUT').click();\ncy.contains('Place Order').click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 8000ms: Expected to find element: `.search-keyword`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 8000ms: Expected to find element: `.search-keyword`, but never found it.\n    at Context.eval (https://rahulshettyacademy.com/__cypress/tests?p=cypress\\integration\\my_examples_2.js:107:8)",
+                "diff": null
+              },
+              "uuid": "4cf057da-dd24-4476-8af5-9e1e46b162c1",
+              "parentUUID": "9a691082-7992-4e4b-8068-6343954c5f75",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "4cf057da-dd24-4476-8af5-9e1e46b162c1"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 12101,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
